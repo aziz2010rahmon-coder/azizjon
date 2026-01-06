@@ -1,0 +1,111 @@
+﻿:root {
+    --blue: #1E3A8A;
+    --white: #FFFFFF;
+    --black: #0A0A0A;
+    --accent: #2563EB;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: linear-gradient(to bottom, #000000, #001f3f);
+    color: white;
+}
+
+
+
+        header {
+            background: linear-gradient(135deg, var(--blue), #0F172A);
+            padding: 28px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+            nav a {
+                color: var(--white);
+                background: rgba(255,255,255,0.1);
+                padding: 10px 14px;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+
+                nav a:hover {
+                    background: rgba(255,255,255,0.2);
+                }
+
+        .hero {
+            min-height: 50vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            background: radial-gradient(circle at top left, rgba(37,99,235,0.3), transparent);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 12px 18px;
+            margin: 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+            .btn:hover {
+                filter: brightness(1.1);
+            }
+
+        .section {
+            padding: 36px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: #0F172A;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 22px;
+            margin-top: 14px;
+        }
+
+        .grid {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+
+.gallery {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 20px;
+}
+
+    .gallery img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #003366;
+        transition: transform 0.2s;
+    }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+
+        footer {
+            padding: 24px;
+            text-align: center;
+            color: #9CA3AF;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            background: #0B1220;
+        }
